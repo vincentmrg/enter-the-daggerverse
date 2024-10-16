@@ -8,7 +8,7 @@
     labels: ["dependencies"],
     prCreation: "not-pending", // do not create PR yet for branches on hold (ex: minimumReleaseAge, building, ...)
     schedule: ["every weekday"],
-    prConcurrentLimit: 10,
+    prConcurrentLimit: 2,
     semanticCommits: "enabled",
     rebaseWhen: "auto", // this is the default value, https://docs.renovatebot.com/configuration-options/#rebasewhen
     prHourlyLimit: 0, // We don't want to limit number of PR/branches created in one renovate scan. Doc https://docs.renovatebot.com/configuration-options/#prhourlylimit
