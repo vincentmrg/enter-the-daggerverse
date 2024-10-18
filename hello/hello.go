@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+type Toto struct {}
+
 func main() {
 	http.HandleFunc("/", HelloServer)
 	http.ListenAndServe(":666", nil)
